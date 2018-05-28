@@ -166,7 +166,7 @@ h6 {
 }
 
 pre {
-    background: rgba(0, 0, 0, .05)
+    background: rgb(238, 238, 238)
 }
 
 pre,
@@ -1498,7 +1498,7 @@ h1 .article .headerlink {
     }
     .project {
         box-shadow: 0 1.5px 3px rgba(0, 0, 0, .24), 0 3px 8px rgba(0, 0, 0, .05);
-        background: #e84e40;
+        background: #323c42;
         color: #fff
     }
     .drawer {

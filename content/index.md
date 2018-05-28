@@ -1,54 +1,186 @@
 ---
 date: 2016-03-08T21:07:13+01:00
 title: Material for Hugo
-type: index
 weight: 0
 ---
 
-## Beautiful documentation
 
-Material is a theme for [Hugo](https://gohugo.io), a fast and flexible static site generator. It is built using Google's [material design](https://www.google.com/design/spec/material-design/introduction.html)
-guidelines, fully responsive, optimized for touch and pointer devices as well
-as all sorts of screen sizes.
+# Heading 1 #
+
+    Markup :  # Heading 1 #
+
+    -OR-
+
+    Markup :  ============= (below H1 text)
+
+## Heading 2 ##
+
+    Markup :  ## Heading 2 ##
+
+    -OR-
+
+    Markup: --------------- (below H2 text)
+
+### Heading 3 ###
+
+    Markup :  ### Heading 3 ###
+
+#### Heading 4 ####
+
+    Markup :  #### Heading 4 ####
 
 
-Material is very lightweight – it is built from scratch using Javascript and
-CSS that weighs less than 30kb (minified, gzipped and excluding Google Fonts
-and Analytics). Yet, it is highly customizable and degrades gracefully in older
-browsers.
+Common text
 
-## Quick start
+    Markup :  Common text
 
-Install with `git`:
+_Emphasized text_
 
-```sh
-git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes/hugo-material-docs
+    Markup :  _Emphasized text_ or *Emphasized text*
+
+~~Strikethrough text~~
+
+    Markup :  ~~Strikethrough text~~
+
+__Strong text__
+
+    Markup :  __Strong text__ or **Strong text**
+
+___Strong emphasized text___
+
+    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
+
+[Named Link](http://www.google.fr/) and http://www.google.fr/ or <http://example.com/>
+
+    Markup :  [Named Link](http://www.google.fr/) and http://www.google.fr/ or <http://example.com/>
+
+Table, like this one :
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
 ```
 
-## Features
+`code()`
 
-- Beautiful, readable and very user-friendly design based on Google's material
-  design guidelines, packed in a full responsive template with a well-defined
-  and [easily customizable color palette]({{< relref "getting-started/index.md#changing-the-color-palette" >}}), great typography, as well as a
-  beautiful search interface and footer.
+    Markup :  `code()`
 
-- Well-tested and optimized Javascript and CSS including a cross-browser
-  fixed/sticky header, a drawer that even works without Javascript using
-  the [checkbox hack](http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/) with fallbacks, responsive tables that scroll when
-  the screen is too small and well-defined print styles.
+```javascript
+    var specificLanguage_code = 
+    {
+        "data": {
+            "lookedUpPlatform": 1,
+            "query": "Kasabian+Test+Transmission",
+            "lookedUpItem": {
+                "name": "Test Transmission",
+                "artist": "Kasabian",
+                "album": "Kasabian",
+                "picture": null,
+                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
+            }
+        }
+    }
+```
 
-- Extra configuration options like a [project logo]({{< relref "getting-started/index.md#adding-a-logo" >}}), links to the authors
-  [GitHub and Twitter accounts]({{< relref "getting-started/index.md#adding-a-github-and-twitter-account" >}}) and display of the amount of stars the
-  project has on GitHub.
+    Markup : ```javascript
+             ```
 
-- Web application capability on iOS – when the page is saved to the homescreen,
-  it behaves and looks like a native application.
+* Bullet list
+    * Nested bullet
+        * Sub-nested bullet etc
+* Bullet list item 2
 
-See the [getting started guide]({{< relref "getting-started/index.md" >}}) for instructions how to get
-it up and running.
+~~~
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+~~~
 
-## Acknowledgements
+1. A numbered list
+    1. A nested numbered list
+    2. Which is numbered
+2. Which is numbered
 
-Last but not least a big thank you to [Martin Donath](https://github.com/squidfunk). He created the original [Material theme](https://github.com/squidfunk/mkdocs-material) for Hugo's companion [MkDocs](http://www.mkdocs.org/). This port wouldn't be possible without him.
+~~~
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
+~~~
 
-Furthermore, thanks to [Steve Francia](https://gihub.com/spf13) for creating Hugo and the [awesome community](https://github.com/spf13/hugo/graphs/contributors) around the project.
+- [ ] An uncompleted task
+- [x] A completed task
+
+~~~
+ Markup : - [ ] An uncompleted task
+          - [x] A completed task
+~~~
+
+> Blockquote
+>> Nested blockquote
+
+    Markup :  > Blockquote
+              >> Nested Blockquote
+
+_Horizontal line :_
+- - - -
+
+    Markup :  - - - -
+
+_Image with alt :_
+
+![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+
+    Markup : ![picture alt](http://www.brightlightpictures.com/assets/images/portfolio/thethaw_header.jpg "Title is optional")
+
+Foldable text:
+
+<details>
+  <summary>Title 1</summary>
+  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+</details>
+<details>
+  <summary>Title 2</summary>
+  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
+</details>
+
+    Markup : <details>
+               <summary>Title 1</summary>
+               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+             </details>
+
+Hotkey:
+
+<kbd>⌘F</kbd>
+
+<kbd>⇧⌘F</kbd>
+
+    Markup : <kbd>⌘F</kbd>
+
+Hotkey list:
+
+| Key | Symbol |
+| --- | --- |
+| Option | ⌥ |
+| Control | ⌃ |
+| Command | ⌘ |
+| Shift | ⇧ |
+| Caps Lock | ⇪ |
+| Tab | ⇥ |
+| Esc | ⎋ |
+| Power | ⌽ |
+| Return | ↩ |
+| Delete | ⌫ |
+| Up | ↑ |
+| Down | ↓ |
+| Left | ← |
+| Right | → |
+
