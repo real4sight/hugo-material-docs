@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>Material Docs</title>
+    <title>Adding content - Material Docs</title>
     <meta name="generator" content="Hugo 0.40.3" />
 
     
     <meta name="description" content="A material design theme for documentations.">
     
-    <link rel="canonical" href="https://example.org/">
+    <link rel="canonical" href="https://example.org/adding-content/">
     
     <meta name="author" content="Digitalcraftsman">
     
 
-    <meta property="og:url" content="https://example.org/">
+    <meta property="og:url" content="https://example.org/adding-content/">
     <meta property="og:title" content="Material Docs">
     <meta property="og:image" content="https://example.org/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="Material Docs">
@@ -69,9 +69,6 @@
     <script src="https://example.org/javascripts/modernizr.js"></script>
 
     
-    <link href="https://example.org/index.xml" rel="alternate" type="application/rss+xml" title="Material Docs" />
-    <link href="https://example.org/index.xml" rel="feed" type="application/rss+xml" title="Material Docs" />
-    
 
   </head>
   <body class="palette-primary-white palette-accent-light-blue">
@@ -100,7 +97,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Material Docs
+        Adding content
       </div>
     </div>
 
@@ -201,11 +198,14 @@
 
 
 
-<a  title="Adding content" href="https://example.org/adding-content/">
+<a class="current" title="Adding content" href="https://example.org/adding-content/">
 	
 	Adding content
 </a>
 
+
+<ul id="scrollspy">
+</ul>
 
 
   
@@ -255,14 +255,11 @@
 
 
 
-<a class="current" title="Material" href="https://example.org/">
+<a  title="Material" href="https://example.org/">
 	
 	Material
 </a>
 
-
-<ul id="scrollspy">
-</ul>
 
 
   
@@ -305,7 +302,64 @@
 
 	<article class="article">
 		<div class="wrapper">
+			<h1>Adding content </h1>
+
 			
+
+<h2 id="hello-world">Hello world</h2>
+
+<p>Let&rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace <code>&lt;section-name&gt;</code> with a general term that describes your document in detail.</p>
+
+<pre><code class="language-sh">hugo new &lt;section-name&gt;/filename.md
+</code></pre>
+
+<p>Visitors of your website will find the final document under <code>www.example.com/&lt;section-name&gt;/filename/</code>.</p>
+
+<p>Since it&rsquo;s possible to have multiple content files in the same section I recommend to create at least one <code>index.md</code> file per section. This ensures that users will find an index page under <code>www.example.com/&lt;section-name&gt;</code>.</p>
+
+<h2 id="homepage">Homepage</h2>
+
+<p>To add content to the homepage you need to add a small indicator to the frontmatter of the content file:</p>
+
+<pre><code class="language-toml">type: index
+</code></pre>
+
+<p>Otherwise the theme will not be able to find the corresponding content file.</p>
+
+<h2 id="table-of-contents">Table of contents</h2>
+
+<p>You maybe noticed that the menu on the left contains a small table of contents of the current page. All <code>&lt;h2&gt;</code> tags (<code>## Headline</code> in Markdown) will be added automatically.</p>
+
+<h2 id="admonitions">Admonitions</h2>
+
+<p>Admonition is a handy feature that adds block-styled side content to your documentation, for example hints, notes or warnings. It can be enabled by using the corresponding <a href="http://gohugo.io/extras/shortcodes/">shortcodes</a> inside your content:</p>
+
+<pre><code class="language-go">{{&lt; note title=&quot;Note&quot; &gt;}}
+Nothing to see here, move along.
+{{&lt; /note &gt;}}
+</code></pre>
+
+<p>This will print the following block:</p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nothing to see here, move along.</p>
+</div>
+
+<p>The shortcode adds a neutral color for the note class and a red color for the warning class. You can also add a custom title:</p>
+
+<pre><code class="language-go">{{&lt; warning title=&quot;Don't try this at home&quot; &gt;}}
+Nothing to see here, move along.
+{{&lt; /warning &gt;}}
+</code></pre>
+
+<p>This will print the following block:</p>
+
+<div class="admonition warning">
+<p class="admonition-title">Don&#39;t try this at home</p>
+<p>Nothing to see here, move along.</p>
+</div>
+
 
 			<aside class="copyright" role="note">
 				
@@ -320,32 +374,33 @@
 			<footer class="footer">
 				
 
-
-
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
-  </div>
-
   
-  
-  <div class="next">
-      <a href="https://example.org/tags/" title="Tags">
+      <a href="https://example.org/getting-started/" title="Getting started">
         <span class="direction">
-          Next
+          Previous
         </span>
         <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
           <div class="stretch">
             <div class="title">
-              Tags
+              Getting started
             </div>
-          </div>
-          <div class="button button-next" role="button" aria-label="Next">
-            <i class="icon icon-forward"></i>
           </div>
         </div>
       </a>
+  
+  </div>
+
+  <div class="next">
+  
   </div>
 </nav>
+
+
 
 
 
