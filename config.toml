@@ -31,11 +31,11 @@ googleAnalytics = ""
 	highlight_css  = ""
 
 	[params.palette]
-    	primary = "red"
-    	accent  = "teal"
+    	primary = "white"
+    	accent  = "light-blue"
 
     [params.font]
-    	text = "Ubuntu"
+    	text = "Roboto"
     	code = "Ubuntu Mono"
 
 
