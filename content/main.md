@@ -1,9 +1,10 @@
 ---
-date: 2016-03-08T21:07:13+01:00
-title: Material for Hugo
-weight: 0
----
+title: "Markdown Cheatsheet"
+date: 2018-05-28T18:21:20+04:00
+draft: true
+type: "index"
 
+---
 
 # Heading 1 #
 
@@ -184,3 +185,8 @@ Hotkey list:
 | Left | ← |
 | Right | → |
 
+Emoji:
+
+:exclamation: Use emoji icons to enhance text. :+1:  Look up emoji codes at [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com/)
+
+    Markup : Code appears between colons :EMOJICODE:

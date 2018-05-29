@@ -1,11 +1,7 @@
-baseurl = "https://example.org/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Material Docs"
+title = "My New Hugo Site"
 theme = "hugo-material-docs"
-metadataformat = "yaml"
-canonifyurls = true
-# Enable Google Analytics by entering your tracking id
-googleAnalytics = ""
 
 [params]
 	# General information
@@ -32,44 +28,28 @@ googleAnalytics = ""
 
 	[params.palette]
     	primary = "white"
-    	accent  = "light-blue"
+    	accent  = "teal"
 
     [params.font]
-    	text = "Open Sans"
+    	text = "Ubuntu"
     	code = "Ubuntu Mono"
-
 
 [social]
 	twitter = ""
 	github  = "digitalcraftsman"
 	email   = "hello@email.com"
 
-
 [[menu.main]]
-	name   = "Material"
-	url    = "/"
+	name   = "Post"
+	url    = "/post"
 	weight = 0
 
+
 [[menu.main]]
-	name   = "Getting started"
-	url    = "getting-started/"
+	name   = "Adding Content"
+	url    = "/adding-content"
+    parent = "cPost"
 	weight = 10
-
-[[menu.main]]
-	name   = "Adding content"
-	url    = "adding-content/"
-	weight = 20
-
-[[menu.main]]
-	name   = "Roadmap"
-	url    = "roadmap/"
-	weight = 30
-
-[[menu.main]]
-	name   = "License"
-	url    = "license/"
-	weight = 40
-
 
 [blackfriday]
 	smartypants	= true
